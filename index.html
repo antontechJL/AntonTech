@@ -51,8 +51,11 @@
   <div class="grid md:grid-cols-3 gap-6">
 
     <!-- CARD 1 -->
-    <div class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
-      <img src="/ruta-de-imagen1.png" alt="XB DEV STORE" class="w-full h-40 object-cover">
+    <div class="bg-white rounded-2xl shadow hover:shadow-2xl transform hover:scale-105 
+                opacity-0 translate-y-10 animate-fadeIn transition duration-500 overflow-hidden"
+         style="animation-delay: 0s">
+      <img src="/ruta-de-imagen1.png" alt="XB DEV STORE" 
+           class="w-full h-40 object-cover transform transition duration-500 hover:scale-110 hover:rotate-1">
       <div class="p-6">
         <h4 class="font-bold text-lg mb-2">XB DEV STORE</h4>
         <p class="text-gray-600 mb-4">Nuestro nuevo store con apps, juegos y emuladores. Incluye actualizaciones y Wiki.</p>
@@ -63,8 +66,11 @@
     </div>
 
     <!-- CARD 2 -->
-    <div class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
-      <img src="/ruta-de-imagen2.png" alt="Xbox Media Tool" class="w-full h-40 object-cover">
+    <div class="bg-white rounded-2xl shadow hover:shadow-2xl transform hover:scale-105 
+                opacity-0 translate-y-10 animate-fadeIn transition duration-500 overflow-hidden"
+         style="animation-delay: 0.2s">
+      <img src="/ruta-de-imagen2.png" alt="Xbox Media Tool" 
+           class="w-full h-40 object-cover transform transition duration-500 hover:scale-110 hover:rotate-1">
       <div class="p-6">
         <h4 class="font-bold text-lg mb-2">XBOX MEDIA TOOL</h4>
         <p class="text-gray-600 mb-4">Herramienta esencial para preparar tu USB para Xbox.</p>
@@ -76,8 +82,11 @@
     </div>
 
     <!-- CARD 3 -->
-    <div class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
-      <img src="/ruta-de-imagen3.png" alt="Safe Exit" class="w-full h-40 object-cover">
+    <div class="bg-white rounded-2xl shadow hover:shadow-2xl transform hover:scale-105 
+                opacity-0 translate-y-10 animate-fadeIn transition duration-500 overflow-hidden"
+         style="animation-delay: 0.4s">
+      <img src="/ruta-de-imagen3.png" alt="Safe Exit" 
+           class="w-full h-40 object-cover transform transition duration-500 hover:scale-110 hover:rotate-1">
       <div class="p-6">
         <h4 class="font-bold text-lg mb-2">SAFE EXIT</h4>
         <p class="text-gray-600 mb-4">Permite regresar a modo retail de forma segura.</p>
@@ -90,6 +99,17 @@
 
   </div>
 </section>
+
+<!-- Agregar estas animaciones en tu <head> o <style> global -->
+<style>
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeIn {
+  animation: fadeIn 0.8s ease forwards;
+}
+</style>
 
 <!-- RESOURCES -->
 <section id="resources" class="max-w-5xl mx-auto px-6 py-12">
